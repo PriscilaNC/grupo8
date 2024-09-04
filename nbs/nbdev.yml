@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "grupo8"
+  site-url: "https://PriscilaNC.github.io/grupo8"
+  description: "MP1 - Sonidos de peligro"
+  repo-branch: main
+  repo-url: "https://github.com/PriscilaNC/grupo8"
