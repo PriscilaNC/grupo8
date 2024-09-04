@@ -17,7 +17,7 @@ format: html
 (function() {
   const sketch = (p) => {let classifier;
 let modelLoaded = 'https://teachablemachine.withgoogle.com/models/3FDQ0h2-1/';
-let words = ["Cristal", "Disparo"];
+let words = ["Ruido de fondo", "cristal", "disparo"];
 let predictedWord = "";
 
 function preload(){
