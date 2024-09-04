@@ -3,4 +3,4 @@ website:
     contents:
       - index.ipynb
       - 00_core.ipynb
-      - Sonido-peligro.qmd
+      - Sonido-Peligro.qmd
