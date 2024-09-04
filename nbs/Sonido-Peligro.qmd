@@ -15,7 +15,9 @@ format: html
  
 <script>
 (function() {
-  const sketch = (p) => {let classifier;
+  const sketch = (p) => {
+
+    let classifier;
 let modelLoaded = 'https://teachablemachine.withgoogle.com/models/3FDQ0h2-1/';
 let words = ["Ruido de fondo", "cristal", "disparo"];
 let predictedWord = "";
@@ -75,7 +77,6 @@ function draw() {
     text(predictedWord, width / 2, 90);
   }
 }
-
 
 
   }; 
