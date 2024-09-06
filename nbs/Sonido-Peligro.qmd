@@ -46,6 +46,7 @@ format: html
     let predictedWord = "";
 
     p.preload = function() {
+      console.log("preload");
       // Options for the SpeechCommands18w model, the default probabilityThreshold is 0
       let options = { probabilityThreshold: 0.7 };
       // Load SpeechCommands18w sound classifier model
@@ -53,12 +54,14 @@ format: html
     };
 
     p.setup = function() {
+      console.log("setup");
       p.createCanvas(650, 450);
       // Classify the sound from microphone in real time
       classifier.classifyStart(gotResult); // Este es el método correcto, no classifier.classifyStart
     };
 
     p.draw = function() {
+      console.log("draw");
       p.background(250);
       // Call function for displaying background words
       displayWords();
@@ -74,6 +77,7 @@ format: html
 
     // Function to display the 18 words on the canvas
     function displayWords() {
+      console.log("displayWords");
       p.textAlign(p.CENTER, p.CENTER);
       p.textSize(32);
       p.fill(96);
@@ -95,6 +99,7 @@ format: html
 
     // A function to run when we get any errors and the results
     function gotResult(results) {
+      console.log("gotResult");
       // The results are in an array ordered by confidence
       console.log(results);
       // Load the first label to the text variable displayed on the canvas
