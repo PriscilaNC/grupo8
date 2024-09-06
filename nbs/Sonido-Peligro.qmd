@@ -4,7 +4,7 @@ description: "Detector de ruidos alarmantes"
 format: html
 ---
 
-![Generada con Canva](Imagenes/Papelografo.jpg){width=100% .center}
+![Papelografo](Imagenes/Papelografo.jpg){width=100% .center}
 
 <div id="p5-sketch">
   <div id="canvas-container"></div>
