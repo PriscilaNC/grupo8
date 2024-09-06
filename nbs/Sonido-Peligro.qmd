@@ -55,7 +55,7 @@ format: html
     p.setup = function() {
       p.createCanvas(650, 450);
       // Classify the sound from microphone in real time
-      classifier.classifyStart(gotResult); // Este es el método correcto, no classifier.classifyStart
+      classifier.classify(gotResult); // Este es el método correcto, no classifier.classifyStart
     };
 
     p.draw = function() {
