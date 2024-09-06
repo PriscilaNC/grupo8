@@ -1,10 +1,11 @@
 ---
-title: "Clasificador de Sonido"
-description: "Ejemplo de modelo pre-entrenado funcionando"
+title: "Clasificador de sonidos peligrosos"
+description: "Detector de ruidos alarmantes"
 format: html
 ---
 
 <div id="p5-sketch">
+  <img src="Papelografo.jpg">
   <div id="canvas-container"></div>
 </div>
 
