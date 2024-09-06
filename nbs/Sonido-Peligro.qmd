@@ -60,7 +60,7 @@ format: html
       p.textAlign(p.CENTER, p.CENTER);
       p.textSize(32);
       p.fill(96);
-      p.text("Say one of these words!", p.width / 2, 40);
+      p.text("Escuchando...", p.width / 2, 40);
 
       let x = 125;
       let y = 150;
