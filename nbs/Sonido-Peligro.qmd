@@ -21,36 +21,15 @@ format: html
     let classifier;
 
     // Array containing the 18 words of SpeechCommands18w
-    let words = [
-      "zero",
-      "one",
-      "two",
-      "three",
-      "four",
-      "five",
-      "six",
-      "seven",
-      "eight",
-      "nine",
-      "up",
-      "down",
-      "left",
-      "right",
-      "go",
-      "stop",
-      "yes",
-      "no",
-    ];
+    let labels = ["Ruido de fondo", "cristal", "disparo"];
 
     // Variable for displaying the results on the canvas
     let predictedWord = "";
 
     p.preload = function() {
       console.log("preload");
-      // Options for the SpeechCommands18w model, the default probabilityThreshold is 0
-      let options = { probabilityThreshold: 0.7 };
       // Load SpeechCommands18w sound classifier model
-      classifier = ml5.soundClassifier("SpeechCommands18w", options);
+      classifier = ml5.soundClassifier("https://teachablemachine.withgoogle.com/models/3FDQ0h2-1/");
     };
 
     p.setup = function() {
